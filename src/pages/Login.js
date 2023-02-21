@@ -26,6 +26,7 @@ function Login () {
                         localStorage.setItem('TOKEN', res.data.token)
                         localStorage.setItem('NAME', res.data.user.name)
                         localStorage.setItem('EMAIL', res.data.user.email)
+                        localStorage.setItem('ROLE', res.data.user.role)
                         setTimeout(() => {
                             navigate('/home')
                         }, 3000)
